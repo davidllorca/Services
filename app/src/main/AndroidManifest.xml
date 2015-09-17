@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.davidllorca.services">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ServicesActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ServicesActivity2"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ServicesActivity3"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ServicesActivity4"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".MyIntentServicesActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".MyIntentServicesActivity2"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ServicesActivity5"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ServicesActivity6"
+            android:label="@string/app_name" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true">
+
+            <!-- With this filter other apps can access to Service -->
+            <!-- startService(new Intent("com.davidllorca.MyService) -->
+            <intent-filter>
+                <action android:name="com.davidllorca.MySercive" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyService2" />
+        <service android:name=".MyService3" />
+        <service android:name=".MyService4" />
+        <service
+            android:name=".MyIntentService"
+            android:exported="false" />
+        <service
+            android:name=".MyIntentService2"
+            android:exported="false" />
+        <service android:name=".MyService5" />
+        <service android:name=".MyService6" />
+    </application>
+</manifest>

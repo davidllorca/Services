@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.davidllorca.services.MainActivity">
+
+    <Button
+        android:id="@+id/simple_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple Service" />
+
+    <Button
+        android:id="@+id/simple_service_ui_thread_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple Service in UI Thread" />
+
+    <Button
+        android:id="@+id/service_async_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service in another thread wit AsyncTask" />
+
+    <Button
+        android:id="@+id/repeated_task_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Repeated task with Timer in Service" />
+
+    <Button
+        android:id="@+id/intent_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task in new Thread with IntentService" />
+
+    <Button
+        android:id="@+id/communicate_service_activity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Communicate Service with Activity with Broadcast" />
+
+    <Button
+        android:id="@+id/link_activity_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Link Activity with Service" />
+
+    <Button
+        android:id="@+id/access_service_from_activity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Access Service parameters by Activity" />
+</LinearLayout>
